@@ -4,6 +4,7 @@
 
 .lottie-hero svg {
   height: 550px !important;
+  margin-top: -10rem !important;
 }
 
 @media screen and (max-width: 768px) {
