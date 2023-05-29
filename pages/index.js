@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Hero from "@/components/home/Hero";
+import Portfolio from "@/components/home/Portfolio";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -41,7 +42,7 @@ export default function Home() {
           Editor and VFX Artists in numerous independent projects.`,
     },
     {
-      heading: "Immersion",
+      heading: "Services",
       description: `I believe that, with multitasking a wish to turn into a 
       Superman can be made possible. Here I introduce myself well inclined to 
       Direction, Video Editing, Graphic designing, Writing, Sketching and music
@@ -70,15 +71,22 @@ export default function Home() {
                 } `}
               >
                 <h2 className=" text-4xl font-bold my-6 ">{info.heading}</h2>
-                <p className="max-w-[35rem] text-xs md:text-base">{info.description}</p>
+                <p className="max-w-[35rem] text-xs md:text-base">
+                  {info.description}
+                </p>
               </div>
               <div className="flex-1 mx-6 flex justify-center items-center">
-                <img className=" rounded-xl " src="./bg.jpeg" alt={`img-${index + 1}`} />
+                <img
+                  className=" rounded-xl "
+                  src="./bg.jpg"
+                  alt={`img-${index + 1}`}
+                />
               </div>
             </section>
           );
         })}
       </div>
+      <Portfolio />
     </main>
   );
 }
