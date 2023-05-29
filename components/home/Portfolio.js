@@ -76,10 +76,10 @@ const Portfolio = () => {
             onClick={() => {
               window.open(data.link);
             }}
-            className=" cursor-pointer h-[33.33vh] w-[33.33vw] flex justify-center items-center flex-col bg-[#0000008f] absolute text-center"
+            className=" cursor-pointer h-[33.33vh] w-[33.33vw] flex justify-start p-2 text-white items-start flex-col absolute text-center"
           >
-            <h2 className="text-2xl font-semibold">{data.name}</h2>
-            <h3>{data.singer}</h3>
+            <h2 className="text-sm font-bold">{data.name}</h2>
+            <h3 className="text-xs ">{data.singer}</h3>
           </div>
         </div>
       ))}
